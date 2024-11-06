@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incremental game</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Incremental game</h1>
+  </header>
+
+  <button id="boop">Boop</button>
+
+  <h2>Boop-o-meter</h2>
+  <br>
+  <span>boops per second target: </span>
+  <span id="bpsTarget">50</span>
+  <div id="bpsBar">
+    <div id="bpsBar1"></div>
+  </div>
+
+
+  <h2>Power level</h2>
+  <p id="boopsSection">
+    <span>Boops: </span>
+    <span id="powerTxt">0</span>
+  </p>
+  <span>Active Boopers: </span>
+  <span id="booperCount">0</span>
+  <span>Current Boop Power: </span>
+  <span id="incrementLvl">+1</span>
+  <div id="powerDiv">
+
+  </div>
+
+  <div id="upgrades">
+    <div id="boopersSection">
+      <button id="booper">Hire Booper</button>
+      <br />
+      <span>Price: </span>
+      <span id="booperPrice">10</span>
+      <br />
+      <span>required: </span>
+      <span id="booperUnlock">12</span>
+    </div>
+
+    <div id="incrementSection">
+      <button id="increment">Upgrade Boops</button>
+      <br />
+      <span>Price:</span>
+      <span id="incrementPrice">100</span>
+    </div>
+  </div>
+
+  <p><i>[debug]:
+      <span id="debugSpan"></span>
+    </i></p>
+
+  <h3>Stats: </h3>
+  <ul>
+    <li>Passive Boops per second: <span id="stats1">$</span></li>
+    <li>Total Boops per second: <span id="stats2">$</span></li>
+  </ul>
+
+
+
+  <footer>
+    Creator: Alex N.
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
